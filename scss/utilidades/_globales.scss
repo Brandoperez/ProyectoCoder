@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $colorFondo;
+    font-family: $fuenteParrafos;
+ }
+ header .barra{
+        @extend %estilosBarras;
+        nav .nav-barra a{
+            color: $colorNegro;
+        }
+        nav .nav-barra a:hover{
+            color: $colorAzul;
+        }
+        .nav-barra .activar{
+            color: $colorAzul;
+            border: 1px solid $colorNegro;
+            border-radius: 19px;
+        }
+         .nav-barra .activar:hover{
+            color: $colorBlanco;
+            background-color: $colorNegro;
+            transition: 1s all ease;
+        }
+        nav .color-ham{
+            background-color: $colorBlanco;
+        }
+    }
+.footer{
+    @extend %estilosBarras;
+    text-align: center;
+    padding: 15px;
+    color: $colorNegro;
+}
+
+

@@ -1,0 +1,106 @@
+/*ACTUALIDAD*/
+main{
+    .titulo-principal{
+        @include tituloPrincipal;
+    }
+    .noticias{
+        @include flex;
+        h2{
+            font-family: $fuenteTitulos;
+            margin: 20px;
+            color: $colorAzul;
+            text-align: left;
+        }
+        img{
+            width: 100%;
+            margin: 10px 0;
+        }
+        p{
+            padding: 10px;
+            margin: -20px 10px;
+        }
+        h3{
+            font-size: 16px;
+            padding: 10px;
+        }
+        .link-mas{
+            color: $colorAzul;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    main{
+        .noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.3fr ;
+        grid-template-areas: 
+        "img titulo"
+        "img texto"
+        "img fecha"
+        "img boton"; 
+        h2{
+            grid-area: titulo;
+            margin: 0 20px;
+            padding: 0 20px;
+            line-height: 3;
+        }
+        p{
+            grid-area: texto;
+            margin: -40px 20px;
+            padding: 0 20px;
+        }
+        h3{
+            grid-area:fecha;
+            margin: 33px 30px;
+            font-weight: bold;
+        }
+        .link-mas{
+            grid-area: boton;
+            margin: -45px 28px;
+        }
+        img{
+            grid-area: img;
+            width: 100%;
+            height: auto;
+            margin: 15px 10px;
+        }
+        }
+    }
+}
+@media  screen and (min-width: 1200px){
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr ;
+        grid-template-areas: 
+        "img titulo"
+        "img texto"
+        "img fecha"
+        "img boton";
+        justify-content: center;
+        align-items: center;
+        h2{
+            grid-area: titulo;
+            margin: 20px 20px -40px 20px;
+        }
+        p{
+            grid-area: texto;
+            margin: 10px 20px;
+        }
+        h3{
+            grid-area:fecha;
+            margin: 0 30px;
+        }
+        .link-mas{
+            grid-area: boton;
+        }
+        img{
+            grid-area: img;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

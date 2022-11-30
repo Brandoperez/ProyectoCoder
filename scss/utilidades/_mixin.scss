@@ -1,0 +1,27 @@
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+@mixin tituloPrincipal{
+    margin: 25px 20px;
+    font-family: $fuenteEspecial
+}
+@mixin parrafos {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+}
+@mixin alturaImagenHome{
+    height: 650px;
+}
+@mixin imagenes {
+    width: 100%;
+}
+@mixin titulosBlog {
+            margin: 5px 20px;
+            color: $colorAzul;
+            font-size: 20px;
+            text-align: center;
+            padding: 1rem;
+            font-family: $fuenteTitulos;
+}

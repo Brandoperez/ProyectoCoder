@@ -1,0 +1,118 @@
+/*BLOG*/
+main{
+    .titulo-principal{
+        @include tituloPrincipal;
+    }
+    .entradas{
+        display: flex;
+        flex-direction: column;
+        img{
+          @include imagenes;
+            margin: 10px 0;
+        }
+        h2{
+            font-family: $fuenteTitulos;
+            text-align: center;
+            color: $colorAzul;
+            margin: 10px 20px;}
+        p{
+            padding: 10px;
+            margin: 0 10px;}
+        .link-mas{
+            color: $colorAzul;
+            text-decoration: none;
+            padding: 20px;
+            }
+}
+}
+@media screen and (min-width: 768px){
+    main {
+        .entradas{
+            @include flex;
+        .h2-blog{
+            font-family: $fuenteTitulos;
+            padding: 0 20px;
+        }
+        p{
+            padding: 0 20px;
+            margin: -20px 20px;
+        }
+        .h2-blog-dos{
+            font-family: $fuenteTitulos;
+            padding: 0 20px;
+        }
+        .p-blog-dos{
+            padding: 0 20px;
+            margin: -20px 20px;
+        }
+        .link-mas{
+            padding: 25px 20px;
+            margin: 0 20px
+        }
+    }
+
+    }
+}
+@media  screen and (min-width: 1200px){
+   main{
+    .entradas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr ;
+        grid-template-areas: 
+            "img h2 img-dos h2-dos"
+            "img p img-dos p-dos"
+            "img boton img-dos boton-dos";
+        margin: 3rem ;
+        border: 1px solid $colorNegro;
+        border-radius: 10px;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        .img-blog{
+            grid-area: img;
+            margin: 0 auto;
+        }
+        .img-blog-dos{
+            grid-area: img-dos;
+            margin: 0 auto;
+            
+        }
+        .h2-blog{
+            grid-area: h2;
+            @include titulosBlog;
+            
+        }
+        .h2-blog-dos{
+            grid-area: h2-dos;
+            @include titulosBlog;
+        }
+        .p-blog{
+            grid-area: p;
+            @include parrafos;
+        }
+        .p-blog-dos{
+            grid-area: p-dos;
+            @include parrafos;
+        }
+        .p-blog-dos{
+            grid-area: p-dos;
+            @include parrafos;
+        }
+        .btn-blog:hover{
+            color: $colorNegro;
+            transition: 3s al ease;
+        }
+        .btn-blog-dos{
+            grid-area: boton-dos;
+            text-decoration: none;
+            color: $colorAzul;
+            font-size: 15px;
+        }
+        .btn-blog-dos:hover{
+            color: $colorNegro;
+            transition: 3s al ease;
+        }
+    }
+   } 
+}

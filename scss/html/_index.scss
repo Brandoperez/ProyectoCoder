@@ -1,0 +1,64 @@
+/*HOME*/
+main{
+    .titulo-principal{
+        @include tituloPrincipal;
+    }
+    .span-principal{
+        margin: 1rem 3rem;
+        position: relative;
+        top: -21px;
+    }
+    .info-seg{
+        margin: 0px 20px 20px;
+        padding: 40px 0 20px 0;
+        text-align: left;
+    }
+    .p-home{
+        margin: 0 20px;
+    }
+    .img{
+        @include alturaImagenHome;
+}
+}
+@media screen and (min-width: 768px){
+    main{
+        .titulo-principal{
+            @include tituloPrincipal;
+        }
+        .info-seg{
+            font-size: 25px;
+    }
+        .p-home{
+        @include parrafos;
+    }
+         .img{
+            @include alturaImagenHome;
+            width: 100%;
+            background-size: cover;
+    }
+    }
+    }
+    @media  screen and (min-width: 1200px){
+    main{
+        .titulo-principal{
+            @include tituloPrincipal;
+        }
+        .span-principal{
+            margin: 1rem 3rem;
+            position: relative;
+            top: -21px;
+        }
+        .info-seg{
+            margin: 60px 60px 20px;
+            padding: 60px 0;
+            text-align: right;
+        }
+        .p-home{
+            @include parrafos;
+            margin: 0 20px;
+        }
+        .img{
+            @include alturaImagenHome;
+        }
+    }
+        }

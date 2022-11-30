@@ -1,0 +1,98 @@
+/*CONOCENOS*/
+main{
+    .encabezado-nosotros{
+        h1, h2{
+            text-align: center;
+            height: 120px;
+            margin: 15px 25px;
+            padding: 40px 0;
+            font-family: $fuenteEspecial;
+         }
+         p{
+            margin: 25px 25px;
+            @include parrafos;
+        }
+    }
+    .info-contacto {
+        .img-contacto{
+            @include imagenes;
+        }
+        p{
+            margin: 25px 25px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            color: $colorAzul;
+            
+        }
+        .p-contacto-dos{
+            margin: 5px 25px 15px 25px;
+        }
+    }
+}
+@media screen and (min-width: 768px){
+  main{
+      .encabezado-nosotros{
+        h1, h2{
+            line-height: 3.2;
+        }
+        p{
+            @include parrafos;
+            margin: 40px 65px;
+        }
+    }
+    .info-contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.7fr 0.2fr 0.2fr;
+        grid-template-areas: 
+        "img p"
+        "img h3"
+        "img p-dos";
+        margin: 3rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+        .img-contacto{
+             grid-area: img;
+             width: 85%;
+             margin: 0 auto;
+        }
+        .p-contacto{
+            grid-area: p;
+        }
+        h3{
+            grid-area: h3;
+            margin: 0 90px;
+        }
+        .p-contacto-dos{
+            grid-area: p-dos;
+        }
+        .nav-barra .activar a{
+            color: $colorAzul;
+        }
+  }
+}
+@media  screen and (min-width: 1200px){
+main{
+    .encabezado-nosotros{
+        p{
+            @include parrafos;
+            margin: 40px 65px;
+        }
+    }
+    .info-contacto{
+        p {
+            @include parrafos;
+            font-weight: bold;
+            margin: 1rem 10rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        .img-contacto{
+            width: 85%;
+        }
+    }
+}
+}

@@ -1,0 +1,28 @@
+/*PODCAST*/
+main{
+    .titulo-principal{
+        @include tituloPrincipal;
+    }
+    .img-portada img{
+        @include imagenes;
+    }
+    .videos .video{
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 768px){
+    main{
+        .videos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .video{
+            padding: 10px;
+        }
+    }
+    }
+   
+}
+@media  screen and (min-width: 1200px){
+
+}

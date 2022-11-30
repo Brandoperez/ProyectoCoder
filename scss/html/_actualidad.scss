@@ -43,13 +43,14 @@ main{
         "img boton"; 
         h2{
             grid-area: titulo;
-            margin: 0 20px;
-            padding: 0 20px;
-            line-height: 3;
+            margin: 0px 20px 10px;
+            padding: 20px;
+            line-height: 2;
+            font-size: 20px;
         }
         p{
             grid-area: texto;
-            margin: -40px 20px;
+            margin: -30px 20px;
             padding: 0 20px;
         }
         h3{

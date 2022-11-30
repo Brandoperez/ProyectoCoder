@@ -13,18 +13,18 @@ header .barra nav .nav-barra a {
 header .barra nav .nav-barra a:hover {
   color: #067aed; }
 
-header .barra .nav-barra .activar {
-  color: #067aed;
-  border: 1px solid #424141;
-  border-radius: 19px; }
-
-header .barra .nav-barra .activar:hover {
-  color: #e6e2e2;
-  background-color: #424141;
-  transition: 1s all ease; }
-
 header .barra nav .color-ham {
   background-color: #e6e2e2; }
+
+@media screen and (min-width: 768px) {
+  header .nav-barra .activar {
+    color: #067aed;
+    border: 1px solid #424141;
+    border-radius: 19px; }
+  header .nav-barra .activar:hover {
+    color: #e6e2e2;
+    background-color: #424141;
+    transition: 1s all ease; } }
 
 .footer {
   text-align: center;
@@ -325,12 +325,13 @@ main .noticias {
     grid-template-areas: "img titulo" "img texto" "img fecha" "img boton"; }
     main .noticias h2 {
       grid-area: titulo;
-      margin: 0 20px;
-      padding: 0 20px;
-      line-height: 3; }
+      margin: 0px 20px 10px;
+      padding: 20px;
+      line-height: 2;
+      font-size: 20px; }
     main .noticias p {
       grid-area: texto;
-      margin: -40px 20px;
+      margin: -30px 20px;
       padding: 0 20px; }
     main .noticias h3 {
       grid-area: fecha;

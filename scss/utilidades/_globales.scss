@@ -15,18 +15,22 @@ body{
         nav .nav-barra a:hover{
             color: $colorAzul;
         }
-        .nav-barra .activar{
+        nav .color-ham{
+            background-color: $colorBlanco;
+        }
+    }
+    @media screen and (min-width: 768px){
+        header{
+           .nav-barra .activar{
             color: $colorAzul;
             border: 1px solid $colorNegro;
             border-radius: 19px;
         }
-         .nav-barra .activar:hover{
+            .nav-barra .activar:hover{
             color: $colorBlanco;
             background-color: $colorNegro;
             transition: 1s all ease;
-        }
-        nav .color-ham{
-            background-color: $colorBlanco;
+        } 
         }
     }
 .footer{

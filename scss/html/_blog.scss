@@ -1,4 +1,5 @@
 /*BLOG*/
+@import "../utilidades/extend";
 main{
     .titulo-principal{
         @include tituloPrincipal;

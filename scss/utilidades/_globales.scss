@@ -38,6 +38,19 @@ body{
     text-align: center;
     padding: 15px;
     color: $colorNegro;
+    .redes{
+        display: flex;
+        justify-content: center;
+        .icon-redes a{
+            margin: 0 3rem;
+            font-size: 18px;
+            color: $colorNegro;
+        }
+        .icon-redes a:hover{
+            color: $colorBlanco;
+            
+        }
+    }
 }
 
 

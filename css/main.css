@@ -30,6 +30,15 @@ header .barra nav .color-ham {
   text-align: center;
   padding: 15px;
   color: #424141; }
+  .footer .redes {
+    display: flex;
+    justify-content: center; }
+    .footer .redes .icon-redes a {
+      margin: 0 3rem;
+      font-size: 18px;
+      color: #424141; }
+    .footer .redes .icon-redes a:hover {
+      color: #e6e2e2; }
 
 header .barra, .footer {
   background: #c6f2ea;
@@ -92,6 +101,10 @@ main .img {
     height: 650px; } }
 
 /*BLOG*/
+header .barra, .footer {
+  background: #c6f2ea;
+  background: linear-gradient(90deg, #c6f2ea 0%, #1dc8d9 34%, #4bd4df 60%, #0ea0c2 79%, #00feff 100%); }
+
 main .titulo-principal {
   margin: 25px 20px;
   font-family: "Rubik Moonrocks", cursive; }
